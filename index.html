@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web development Session</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="media-container">
+        <img src="pexel image.jpeg" width="50%" height="50%" style="float:right"><br><br>
+        <video controls>
+           <source src="web dev video.mp4" type="video/mp4">
+           <a href="web dev video.mp4"> Download <video src=""></video> </a>
+           Your browser does not support the video tag.
+
+        </video>
+
+   </div>
+    <header>
+        <h1>Welcome to web development Session🎉</h1>
+    </header>
+    <main>
+        <p>Web development refers to the overall process of creating websites or web applications, including the project's design, layout, coding, content creation, and functionality. It involves using a combination of programming languages, tools, and frameworks to bring a website or web application to life.</p><br>
+        <h2>Make Sure You have:</h2>
+        <ol type="i">
+            <li>A Functional computer/Laptop</li>
+            <li>Access to a stable internet</li>
+            <li>You can give atleast 2hrs a day for a class session</li>
+
+        </ol>
+        <h2>Register for the session here👇</h2>
+      
+
+        <form method="GET" action="" enctype="multipart/form data">
+            <div class="input-container">
+                <b>Name:</b>
+                <input type="Text" required><br><br>
+                <b>Email:</b>
+                <input type="email"placeholder="input email" required><br><br>
+                <b>password:</b>
+                <div class="password-container">
+                    <input type="password" id="password" class="input-field" placeholder="Enter your password" required>
+                    <span class="toggle-icon" onclick="togglePassword()">👁️</span>
+                </div><br>
+                <b>Date:</b>
+                <input type="date" required>
+            </div><br><br>
+            <b>Gender:</b><br><br>
+            <input type="radio" name="gender" value="Male">Male<br><br>
+            <input type="radio" name="gender" value="Female">Female<br><br>
+            <b></b>
+            <b>Experience:</b>
+            <select>
+            <option>Beginner</option>
+            <option>Intermidiate</option>
+            <option>Expert</option>
+            </select><br><br>
+            <b>I have knowledge in:</b><br><br>
+            <input type="checkbox">Cyber security<br><br>
+            <input type="checkbox">python programming<br><br>
+            <input type="checkbox">Software development<br><br>
+            <input type="checkbox">Web development<br><br>
+            <input type="checkbox">Marchine learning and AI<br><br>
+
+            <input type="submit" value="submit">
+        </form><br><br>
+       <h3>Enrolled students</h3>
+       <table border="1" cellpadding="2" width="60%">
+            <tr>
+                <td>Name</td>
+                <td>Address</td>
+                <td>Mobile</td>
+                <td>Email</td>
+            </tr>
+            <tr>
+                <td>Emmaculate Oduor</td>
+                <td>Kenya,Nairobi</td>
+                <td>0766666668</td>
+                <td>emmaculate@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Samuel kame</td>
+                <td>Uganda,Kampala</td>
+                <td>0767639278</td>
+                <td>www@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Kennedy Onyango</td>
+                <td>Kenya,Siaya</td>
+                <td>0739994568</td>
+                <td>kennedy@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Cynthia Tausi</td>
+                <td>Tanzania,Daraesalam</td>
+                <td>0739994568</td>
+                <td>cynthia@gmail.com</td>
+            </tr>
+       </table><br><br>
+
+       <figure>
+        <figcaption>Listen To this Song:</figcaption>
+        <audio controls src="my audio.mp3"></audio>
+        <a href="my audio.mp3"> Download audio </a>
+      </figure>
+
+    </main><br><br>
+    <center>
+    <footer>@ copyright Emmy 2025</footer>
+    </center>
+</body>
+</html>
+<script>
+    function togglePassword() {
+        var passwordField = document.getElementById("password");
+        var icon = document.querySelector(".toggle-icon");
+
+        if (passwordField.type === "password") {
+            passwordField.type = "text";
+            icon.textContent = "🙈"; // Change icon to hide mode
+        } else {
+            passwordField.type = "password";
+            icon.textContent = "👁️"; // Change icon to show mode
+        }
+    }
+</script>
